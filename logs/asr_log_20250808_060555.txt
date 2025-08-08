@@ -1,0 +1,17 @@
+2025-08-08 06:05:55,585 - INFO - <module> - ============================================================
+2025-08-08 06:05:55,585 - INFO - <module> - ASR System Starting
+2025-08-08 06:05:55,585 - INFO - <module> - Log file: logs/asr_log_20250808_060555.txt
+2025-08-08 06:05:55,585 - INFO - <module> - ============================================================
+2025-08-08 06:05:55,704 - ERROR - wrapper - Error in transcribe_with_elevenlabs: transcribe_with_elevenlabs() got an unexpected keyword argument 'enable_translation'
+2025-08-08 06:05:55,704 - ERROR - wrapper - Traceback (most recent call last):
+  File "/app/app.py", line 49, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: transcribe_with_elevenlabs() got an unexpected keyword argument 'enable_translation'
+
+2025-08-08 06:05:55,713 - INFO - transcribe_with_elevenlabs - Starting transcription for 'English' (eng). Diarization: True
+2025-08-08 06:05:55,713 - INFO - transcribe_with_elevenlabs - Successfully received response from Eleven Labs API.
+2025-08-08 06:05:55,713 - INFO - transcribe_with_elevenlabs - ✅ Transcription successful.
+2025-08-08 06:05:55,774 - INFO - _send_single_request - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2025-08-08 06:05:55,862 - INFO - _send_single_request - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-08-08 06:05:56,085 - INFO - _send_single_request - HTTP Request: POST https://api.gradio.app/gradio-initiated-analytics/ "HTTP/1.1 200 OK"

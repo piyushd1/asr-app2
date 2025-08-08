@@ -1,0 +1,26 @@
+2025-08-08 06:06:47,765 - INFO - <module> - ============================================================
+2025-08-08 06:06:47,765 - INFO - <module> - ASR System Starting
+2025-08-08 06:06:47,765 - INFO - <module> - Log file: logs/asr_log_20250808_060647.txt
+2025-08-08 06:06:47,765 - INFO - <module> - ============================================================
+2025-08-08 06:06:47,868 - INFO - transcribe_with_elevenlabs - Starting transcription for 'English' (eng). Diarization: True
+2025-08-08 06:06:47,868 - ERROR - transcribe_with_elevenlabs - Eleven Labs API error: API connection failed
+2025-08-08 06:06:47,869 - ERROR - transcribe_with_elevenlabs - Traceback (most recent call last):
+  File "/app/app.py", line 127, in transcribe_with_elevenlabs
+    response = client.speech_to_text.convert(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/unittest/mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/unittest/mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/unittest/mock.py", line 1198, in _execute_mock_call
+    raise effect
+Exception: API connection failed
+
+2025-08-08 06:06:47,871 - INFO - transcribe_with_elevenlabs - Starting transcription for 'English' (eng). Diarization: True
+2025-08-08 06:06:47,871 - INFO - transcribe_with_elevenlabs - Successfully received response from Eleven Labs API.
+2025-08-08 06:06:47,871 - INFO - transcribe_with_elevenlabs - ✅ Transcription successful.
+2025-08-08 06:06:47,981 - INFO - _send_single_request - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2025-08-08 06:06:48,027 - INFO - _send_single_request - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-08-08 06:06:48,340 - INFO - _send_single_request - HTTP Request: POST https://api.gradio.app/gradio-initiated-analytics/ "HTTP/1.1 200 OK"
